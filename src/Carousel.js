@@ -2,25 +2,21 @@ import React from 'react';
 import Carousel from 'nuka-carousel';
 
 class NewCarousel extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            loaded: false
-        }
-    }
+
 
     async componentDidMount() {
-        console.log("this.props", this.props)
         await this.props
         this.setState({loaded: true})
     }
 
     render() {
+        const { images } = this.props;
+        //TODO: key needs to be more unique
         return (
             <Carousel>
-                {this.state.loaded ? this.props.images.map(image => {
-                    return <img src={image.url} />
-                }) : null }
+                {images.map(image => {
+                    return <img key={image.image} src={image.image} />
+                })}
             </Carousel>
         )
     }

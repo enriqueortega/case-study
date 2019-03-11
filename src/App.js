@@ -15,19 +15,17 @@ class App extends Component {
   async componentWillMount() {
     this.data = await getData();
     this.setState({
-      images: this.data.Images[0].PrimaryImage
+      images: this.data.Images[0].PrimaryImage //TODO: Needs to be dynamic. Perhaps have it cleaned up in the api.js file
     })
-    console.log("this.data = ", this.data);
   }
-
-
   
   render() {
+    const { images } = this.state;
     return (
       <div className="App">
         <header className="App-header">
           <NewCarousel
-          images={this.state.images[0]}> 
+          images={images}> 
 
           </NewCarousel>
         </header>
