@@ -1,0 +1,7 @@
+.SpecialOffersBlock {
+    color: red;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    padding: 10px;
+    text-align: left;
+}

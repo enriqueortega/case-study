@@ -1,0 +1,15 @@
+.buttons-section button {
+    width: 170px;
+    height: 30px;
+    margin: 9px;
+    color: white;
+    border-radius: 3px;
+}
+
+.PickUpInStore {
+    background-color: black;
+}
+
+.AddToCart {
+    background-color: red;
+}

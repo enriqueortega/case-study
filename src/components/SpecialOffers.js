@@ -1,4 +1,5 @@
 import React from 'react';
+import './SpecialOffers.css';
 
 class SpecialOffersBlock extends React.Component {
 
@@ -7,9 +8,9 @@ class SpecialOffersBlock extends React.Component {
     }
 
     render() {
-        let { promotions } = this.props.promotions;
+        const {className, promotions = []} = this.props;
         return (
-            <div className={this.props.className}>
+            <div className={className}>
                 {promotions.map(item => {
                     return <div key={item.promotionIdentifier}>
                         {item.Description[0].shortDescription}
