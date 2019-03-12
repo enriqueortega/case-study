@@ -8,7 +8,6 @@ class NewCarousel extends React.Component {
 
     async componentDidMount() {
         await this.props
-        this.setState({loaded: true})
     }
 
     render() {
