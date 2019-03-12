@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NewCarousel from './Carousel.js';
+import NewCarousel from './components/Carousel.js';
 import api from './App.api.js';
 import './App.css';
 
