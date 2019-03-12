@@ -2,11 +2,6 @@ import React from 'react';
 import './SpecialOffers.css';
 
 class SpecialOffersBlock extends React.Component {
-
-    async componentDidMount() {
-        await this.props
-    }
-
     render() {
         const {className, promotions = []} = this.props;
         return (

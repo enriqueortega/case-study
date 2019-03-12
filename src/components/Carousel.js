@@ -4,12 +4,6 @@ import BlenderWithCups from '../imgs/blender_with_cups.png';
 import WomanPouringDetoxDrink from '../imgs/woman_pouring_detox_drink.png';
 
 class NewCarousel extends React.Component {
-
-
-    async componentDidMount() {
-        await this.props
-    }
-
     render() {
         let { images } = this.props;
 

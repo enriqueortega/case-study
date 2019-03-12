@@ -2,15 +2,6 @@ import React from 'react';
 import './Button.css'
 
 class Button extends React.Component {
-
-    constructor(props) {
-        super(props)
-    }
-
-    async componentDidMount() {
-        await this.props
-    }
-
     render() {
         const {text, className, isDisabled} = this.props;
         return (
